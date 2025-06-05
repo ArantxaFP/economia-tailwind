@@ -1,27 +1,45 @@
 <!DOCTYPE html>
+<html lang="ca">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="./assets/styles/main.scss" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <title>Jornades d’Economia Circular</title>
+</head>
+
+<body class="bg-gradient-to-br from-[#e0f7ec] to-[#79d3e8] text-center min-h-screen font-sans text-[#333]">
+
+  <include src="./views/header.html"></include>
+
+  <main class="grid grid-rows-[auto_auto_1fr_auto] gap-5 min-h-[100dvh]">
+
+    <!-- HERO -->
+    <header class="relative w-full h-screen flex justify-center items-center overflow-hidden">
       <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
+        <source srcset="./assets/images/finance-8037841.webp?as=webp&width=800" type="image/webp" />
+        <img src="./assets/images/finance-8037841.webp" alt="Gràfic financer"
+          class="absolute top-0 left-0 w-full h-full object-cover z-0" />
       </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+      <div class="poster-overlay">
+        <h1 class="poster-title">Jornades d'Economia Circular</h1>
+        <p class="text-white text-lg mb-1 text-shadow">12 i 13 de juny - Ajuntament de Barcelona</p>
+        <p class="text-white text-lg text-shadow">Construint un futur sostenible</p>
+      </div>
+    </header>
+
+    <!-- INFO -->
+    <section class="poster-info">
+      <p class="mb-4">Un espai per reflexionar, aprendre i col·laborar sobre models econòmics sostenibles.</p>
+      <p class="mb-4">Amb ponències, tallers i activitats per a tots els públics interessats en el futur del planeta.</p>
+      <p><strong>Activitats:</strong> Xerrades · Tallers · Cursos</p>
+    </section>
+
+  </main>
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
 </html>

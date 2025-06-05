@@ -1,0 +1,68 @@
+@layer components {
+  .article-wrapper {
+    @apply max-w-[60rem] mx-auto px-4 py-8;
+  }
+
+  .article-header {
+    @apply relative w-screen left-1/2 -ml-[50vw] h-[50vh] min-h-[300px] flex items-center justify-center overflow-hidden mb-8;
+  }
+
+  .article-image {
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+  }
+
+  .article-overlay {
+    @apply relative bg-[#000078]/60 rounded-xl shadow p-4 text-center;
+  }
+
+  .article-title {
+    @apply text-white font-serif font-bold mb-2 text-4xl md:text-5xl;
+  }
+
+  .article-author {
+    @apply text-white font-semibold text-sm;
+  }
+
+  .article-content {
+    @apply flex flex-col gap-6;
+  }
+
+  .article-content h1,
+  .article-content h2 {
+    @apply font-serif text-[#000078];
+  }
+
+  .article-content p {
+    @apply text-[16px] text-[#333] leading-relaxed;
+  }
+
+  .article-content img {
+    @apply w-full h-auto rounded shadow-sm;
+  }
+
+  .article-highlight {
+    @apply flex justify-center gap-6 items-start flex-wrap md:flex-nowrap;
+  }
+
+  .highlight-left {
+    @apply flex-1 max-w-[20rem] bg-[#73edff33] text-[#000078] p-4 rounded font-bold text-[clamp(1.2rem,3vw,1.5rem)] leading-snug;
+  }
+
+  .highlight-right {
+    @apply flex-1 text-[clamp(0.9rem,2vw,1rem)] text-[#333] leading-relaxed;
+  }
+
+  blockquote {
+    @apply italic bg-[#d9faff] border-l-4 border-[#000078] p-4 text-[#000078] m-0;
+  }
+
+  .article-content ul,
+  .article-content ol,
+  .article-content p {
+    @apply mb-4;
+  }
+
+  .article-content:has(img[src*="img1"]) {
+    @apply border-2 border-dashed border-[#000078] p-6;
+  }
+}
