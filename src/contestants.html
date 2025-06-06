@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cooking Contest</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+  </head>
+  <body class="bg-white font-sans text-gray-800">
+
+    <include src="./views/hederfigma.html"></include>
+
+    <main class="max-w-screen-xl mx-auto px-4 py-12">
+
+    <section class="max-w-screen-xl mx-auto px-4 py-12 text-center">
+      <h2 class="text-3xl font-bold text-black mb-2">Contestants</h2>
+      <p class="text-gray-500 mb-8">This section describes the recipes of the best contestants</p>
+      <img 
+        src="./assets/images/header_taula_preparacio.png" 
+        alt="Contestants cooking together" 
+        class="w-full max-w-4xl mx-auto rounded-lg object-cover"
+      />
+    </section>
+
+
+
+   
+    <section class="max-w-screen-xl mx-auto px-4 py-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-2">The recipes</h2>
+      <p class="text-lg text-gray-500 mb-10">These are the recipes of the best contestants</p>
+    
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4 text-black">Cajun seafood pasta</h3>
+          <div class="flex items-start gap-4">
+            <img src="./assets/images/John_cooper.png" alt="John Cooper" class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <p class="font-semibold text-black">John Cooper</p>
+              <p class="text-gray-500 text-sm">This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Card 2 -->
+        <article class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4 text-black">Cedar planked salmon</h3>
+          <div class="flex items-start gap-4">
+            <img src="./assets/images/Marta_alonso.png" alt="Marta Alonso" class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <p class="font-semibold text-black">Marta Alonso</p>
+              <p class="text-gray-500 text-sm">Salmon reaches its full potential when it's grilled on top of a cedar plank.</p>
+            </div>
+          </div>
+        </article>
+    
+        <!-- Card 3 -->
+        <article class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4 text-black">Poulet au vinaigre</h3>
+          <div class="flex items-start gap-4">
+            <img src="./assets/images/Mary_ann_stones.png" alt="Mary Ann Stones" class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <p class="font-semibold text-black">Mary Ann Stones</p>
+              <p class="text-gray-500 text-sm">Irresistible chicken, cooked with vinegar.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    </main>
+
+    <include src="./views/footerfigma.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
