@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Cooking Contest</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+  </head>
+  <body class="bg-white font-sans text-gray-800">
+
+    <include src="./views/hederfigma.html"></include>
+
+    <main class="max-w-screen-xl mx-auto px-4 py-8">
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-blue-900">The recipes</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="bg-blue-50 p-4 rounded shadow hover:shadow-md transition">
+            <h3 class="text-lg font-semibold text-blue-800">Cajun seafood pasta</h3>
+            <p class="text-sm text-gray-700 mb-1">John Cooper</p>
+            <p class="text-sm">This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+          </article>
+
+          <article class="bg-blue-50 p-4 rounded shadow hover:shadow-md transition">
+            <h3 class="text-lg font-semibold text-blue-800">Cedar planked salmon</h3>
+            <p class="text-sm text-gray-700 mb-1">Marta Alonso</p>
+            <p class="text-sm">Salmon reaches its full potential when grilled on a cedar plank.</p>
+          </article>
+
+          <article class="bg-blue-50 p-4 rounded shadow hover:shadow-md transition">
+            <h3 class="text-lg font-semibold text-blue-800">Poulet au vinaigre</h3>
+            <p class="text-sm text-gray-700 mb-1">Mary Ann Stones</p>
+            <p class="text-sm">Irresistible chicken, cooked with vinegar.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <include src="./views/footerfigma.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
